@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide &amp; Tracker — all 55 trophies, offline</title>
+<meta name="description" content="An offline guide and tracker for all 55 Grand Theft Auto VI trophies on PlayStation 5: roadmap to the platinum, missable flags, cited guides, checklist saved in your browser.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23160a1e'/%3E%3Cpath d='M16 5 L26 16 L16 27 L6 16 Z' fill='none' stroke='%23ff2e88' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='3.5' fill='%23f5c542'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; offline guide</p>
+    <h1>GTA VI Trophy Guide <span class="amp">&amp;</span> Tracker</h1>
+    <p class="lede">All 55 trophies, each with its official name, description and grade, a guide in our own
+      words with its sources named, a roadmap to the platinum, and the one trophy that can be missed.
+      Tick trophies off as you earn them — your progress stays in this browser, and the whole guide
+      works with the network off.</p>
+    <div class="progress-wrap" role="status" aria-live="polite">
+      <div class="progress-line">
+        <strong id="progressText">0 of 55 earned</strong>
+        <span id="progressPct">0%</span>
+      </div>
+      <div class="progress-bar"><div id="progressFill" class="progress-fill" style="width:0%"></div></div>
+      <p class="grade-counts" id="gradeCounts"></p>
+      <p class="next-up" id="nextUp"></p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <nav class="roadmap-strip" id="roadmapStrip" aria-label="Roadmap to the platinum — summary"></nav>
+
+  <div class="toolbar" id="toolbar">
+    <div class="toolbar-row">
+      <label class="search-label">Search
+        <input id="search" type="search" placeholder="Trophy, mission, or keyword…" autocomplete="off">
+      </label>
+      <label class="grade-label">Grade
+        <select id="grade">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="check-label"><input id="earnedOnly" type="checkbox"> Earned only</label>
+      <label class="check-label"><input id="spoilerToggle" type="checkbox"> Hide story spoilers</label>
+    </div>
+    <div class="toolbar-row">
+      <div class="chips" id="kindChips" role="group" aria-label="Filter by kind"></div>
+      <div class="actions">
+        <button id="exportBtn" type="button">Export progress</button>
+        <label class="import-label">Import progress
+          <input id="importFile" type="file" accept="application/json,.json">
+        </label>
+        <button id="resetBtn" type="button">Reset</button>
+      </div>
+    </div>
+    <p class="toolbar-status" id="listStatus" role="status"></p>
+    <p class="import-error" id="importError" role="alert" hidden></p>
+  </div>
+
+
+
+  <section class="trophies" aria-labelledby="listTitle">
+    <h2 id="listTitle" class="visually-hidden">Trophy checklist</h2>
+    <div id="trophyList"></div>
+    <p class="empty" id="emptyState" hidden></p>
+  </section>
+
+  <section class="roadmap" id="roadmap" aria-labelledby="roadmapTitle">
+    <h2 id="roadmapTitle">Roadmap to the platinum</h2>
+    <p class="roadmap-intro">PowerPyx rates the set 4/10 and about 200 hours to the platinum, in a single
+      playthrough. There are no difficulty settings, no mission gold medals, and <strong>no mission
+      replay</strong> — so keep a manual save at the start of each chapter (the game gives you 15 manual
+      save slots). Cheats switch trophies and saving off, so keep them off on your trophy save. The
+      100% checklist is lenient — PowerPyx calls it roughly 60% of true completion — and nothing on
+      it is missable.</p>
+    <div class="missable-callout" id="missableCallout"></div>
+    <ol class="phases" id="phases"></ol>
+    <h3 class="thresholds-title">100% completion at a glance</h3>
+    <p class="thresholds-note">The thresholds for A Long Road, as PowerPyx reports them. The checklist
+      opens after the story under Progress, then Stats, then 100% Completion; progress made during
+      the story already counts.</p>
+    <table class="thresholds">
+      <thead><tr><th>Checklist item</th><th>Needed</th><th>Of</th></tr></thead>
+      <tbody>
+        <tr><td>Optional missions</td><td>100</td><td>200–300+ exist</td></tr>
+        <tr><td>Vehicles scanned (WAiNK)</td><td>200</td><td>277 base models</td></tr>
+        <tr><td>Animals studied (binoculars)</td><td>100</td><td>255 animals</td></tr>
+        <tr><td>Challenges</td><td>70</td><td>80</td></tr>
+        <tr><td>Stunts</td><td>300</td><td>397</td></tr>
+        <tr><td>WAiNK scans</td><td>100</td><td>100+ exist</td></tr>
+        <tr><td>Meditation spots</td><td>15</td><td>18</td></tr>
+        <tr><td>Card sets</td><td>15</td><td>18 sets</td></tr>
+        <tr><td>Bank vaults (large bank jobs)</td><td>8</td><td>8</td></tr>
+        <tr><td>Gang operations</td><td>39</td><td>39</td></tr>
+        <tr><td>Shooting Range gold medals</td><td>42</td><td>42</td></tr>
+        <tr><td>Drone races</td><td>42</td><td>42</td></tr>
+        <tr><td>Bret's Target Decks</td><td>15</td><td>15</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="notes" aria-labelledby="notesTitle">
+    <h2 id="notesTitle">About this guide</h2>
+    <ul>
+      <li><strong>Official list.</strong> Names, descriptions and grades are the 55 trophies as listed
+        by Exophase and PSNProfiles, reported by Push Square, GamesRadar+ and PC Gamer. Rockstar, Sony
+        and Microsoft have not published the list themselves. Shown here exactly as the lists carry them.</li>
+      <li><strong>Own words, cited sources.</strong> Every guide is written for this page and names its
+        sources beside it — mostly the PowerPyx trophy guide and roadmap, with KeenGamer, Output Lag and
+        GTA Zone corroborating the list. A specific location or step with no source earns no trust here.</li>
+      <li><strong>Honest gaps.</strong> Five trophies were still unconfirmed at launch
+        (In The Beginning…, Capital Offense, Bad Luck, I Guess, The Truth Is Out There, Ten Pin).
+        Their guides say so instead of inventing a method. Check the linked PowerPyx guide for updates.</li>
+      <li><strong>No online trophies.</strong> All 55 are single-player and offline. The Online filter
+        exists so you can see that for yourself — it finds nothing, by design.</li>
+      <li><strong>Your data stays yours.</strong> Progress lives in this browser's local storage. Export
+        writes a file you own; import reads only the file you choose. Nothing is sent anywhere — this
+        page makes no network requests at all.</li>
+      <li><strong>Not affiliated.</strong> An unofficial fan guide. Grand Theft Auto and Rockstar Games
+        are trademarks of their owners; no Rockstar logo, artwork, or game imagery is used here.</li>
+    </ul>
+    <p class="source-list" id="sourceList"></p>
+  </section>
+</main>
+
+<footer>
+  <p>GTA VI Trophy Guide &amp; Tracker — built for the make.fun gta6-trophy-guide-01 bounty.
+    Game released 19 November 2026. Guide text checked against sources on 19 November 2026.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
