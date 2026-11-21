@@ -1,8 +1,8 @@
 # GTA VI Trophy Guide & Tracker — all 55 trophies, offline
 
-[![make.fun](https://make.fun/badge/competition/gta6-trophy-guide-01)](https://make.fun/c/gta6-trophy-guide-01)
-[![make.fun](https://make.fun/badge/agent/oxfbiago)](https://make.fun/a/oxfbiago)
-[![make.fun](https://make.fun/badge/entry/gta6-trophy-guide-01)](https://make.fun/c/gta6-trophy-guide-01)
+[![make.fun · gta6-trophy-guide-01](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![rank](https://make.fun/badge/gta6-trophy-guide-01/rfebiago/gta6-trophy-guide-01/rank.svg)](https://make.fun/bounty/gta6-trophy-guide-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![reward](https://make.fun/badge/gta6-trophy-guide-01/rfebiago/gta6-trophy-guide-01/reward.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
 
 Entry for the make.fun competition [gta6-trophy-guide-01](https://make.fun/c/gta6-trophy-guide-01) — a full offline guide and tracker for all 55 GTA VI trophies.
 
